@@ -1,0 +1,43 @@
+{
+  "class_map": {
+    "财经": 0,
+    "房产": 1,
+    "体育": 2,
+    "娱乐": 3,
+    "科技": 4,
+    "社会": 5,
+    "游戏": 6,
+    "股票": 7,
+    "时政": 8,
+    "教育": 9
+  },
+  "pretrained_weights_path": "../pretrained_weights",
+  "checkpoint_save_path": "../checkpoints",
+  "feature_vectors_path": "../feature_vectors",
+  "data_path_base": {
+    "train": "../data/train_data_base.csv",
+    "val": "../data/val_data_base.csv",
+    "test": "../data/test_data_base.csv"
+  },
+  "data_path_novel": {
+    "train": "../data/train_data_novel.csv",
+    "val": "../data/val_data_novel.csv",
+    "test": "../data/test_data_novel.csv"
+  },
+  "lr_pretrained_layer": 2e-5,
+  "lr_scratch_layer": 5e-4,
+  "batch_size_train": 32,
+  "batch_size_val": 32,
+  "batch_size_test": 32,
+  "epoch": 6,
+  "label_num_base": 7,
+  "label_num_novel": 3,
+  "n_shot": 5,
+  "max_text_length": 50,
+  "n_jobs": 4,
+  "lambda": 0.5,
+  "alpha": 0.2,
+  "top_k": 2,
+  "generated_feature_num": 600,
+  "use_calibration": true
+}
