@@ -38,7 +38,7 @@ def train_feature_extractor(config: Dict):
     f1_scores = []
     max_text_length = config.get('max_text_length')
     logger.info('#################### Extractor fine-tuning start ######################')
-    for i in range(config.get('epoch')):
+    for i in range(config.get('extractor_epoch')):
         model.train()
         for j, (x, y) in enumerate(tqdm(train_loader)):
             optimizer.zero_grad()
